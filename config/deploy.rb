@@ -30,7 +30,7 @@ set :branch, "master"
 $:.unshift(File.expand_path('./lib', ENV['rvm_path'])) 
 require "rvm/capistrano"                  
 set :rvmruby, "ruby-1.9.2-head"
-set :rvm_ruby_string, "#{rvmruby}@rails_app"
+set :rvm_ruby_string, "#{rvmruby}@bainrnd"
 
 ##
 ##  Unicorn
@@ -41,7 +41,7 @@ set :unicorn_pid, "#{current_path}/tmp/pids/unicorn.pid"
 ##
 ##  Cap Deploy Config
 ##
-server "cyphermuse.com", :app, :web, :db, :primary => true
+server "bainrnd.com", :app, :web, :db, :primary => true
 set :rails_env, :production
 
 ##

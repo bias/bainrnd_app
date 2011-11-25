@@ -1,0 +1,98 @@
+#wrapper {
+  margin: 120px auto 20px auto;
+  width: 660px;
+}
+#wrapper #subwrap {
+  background-color: #FDC571;
+  z-index: 100;
+  position: relative;
+  width: 660px;
+  min-height: 400px;
+}
+
+header {
+  z-index: 100; 
+  position: absolute;
+  top: 0;
+  width: 100%;
+  //height: 100px;
+  min-width: 660px;
+  h1 {
+    padding-top: 20px;
+    font-weight: normal;
+    font-size: 35pt;
+  }
+}
+
+footer {
+  text-align: center;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  margin-bottom: 0.5em;
+}
+
+p, pre {
+  margin-bottom: 1em;
+}
+
+pre {
+  font-size: 1em;
+  padding: 1em;
+  color: #936;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  &:hover {
+    color: #006699;
+    text-decoration: underline; 
+  }
+  &:visited {
+    color: #006699; 
+  } 
+}
+
+/* Navigation */
+
+nav {
+  //background-color: white;
+  padding: 0 0.7em;
+  white-space: nowrap;
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      list-style-type: none;
+      display: inline-block;
+      padding: 0.2em 0;
+      a {
+        padding: 0 5px;
+        font-weight: bold;
+		font-family: MothproofScriptRegular;
+        &:visited { color: #0099cc; }
+        &:hover { text-decoration: underline; } 
+	  } 
+	} 
+  } 
+}
+
+/* Sign up button */
+
+a.signup_button {
+  margin: auto;
+  display: block;
+  text-align: center;
+  width: 200px;
+  color: white;
+  background: black;
+  font: bold 150% Times;  
+  padding: 20px; 
+}

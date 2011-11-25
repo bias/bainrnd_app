@@ -1,0 +1,42 @@
+.aside {
+  clear: both;
+  float: left;
+  margin-left: -140px;
+  width: 150px;
+}
+
+#nav {
+  list-style-type: none;
+  text-align: left;
+  position: fixed !important;
+  position: absolute;
+  top: 12em;
+  z-index: 50;
+  a {
+    display: block;
+	padding: 0 0.5em 0 1.5em;
+	font: normal 16pt MothproofScriptRegular;
+  	line-height: 35px;
+  	vertical-align: middle;
+  	//text-shadow: 0.5px 1px 2px rgba(0,0,0, 0.5);
+    span { float: left; }
+  }
+  li {
+    display: block;
+    height: 3em;
+  }
+  .extra {
+    a { background-color: #295d28; }
+  }
+}
+
+#home_box {
+  background-color: #694;
+  position: fixed !important;
+  position: absolute;
+  padding-top: 2em;
+  padding-bottom: 1em;
+  top: 0;
+  text-align: right;
+  z-index: 1;
+}

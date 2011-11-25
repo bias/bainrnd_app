@@ -1,0 +1,210 @@
+$type_path: '../../typefaces/';
+
+/* Topstitch is a nonfree typefaces, donated to the project by Typodermic */
+/* Of note, this is only a subset of the full typeface. Further, EULA, and local laws in some areas,
+   do not permit you to install this typeface globally on your computer without your own license. */
+@font-face {
+	font-family: 'TopstitchRegular';
+	src: url('#{$type_path}topstitch-webfont.eot');
+	src: url('#{$type_path}topstitch-webfont.woff') format('woff'),
+	     url('#{$type_path}topstitch-webfont.ttf') format('truetype'),
+	     url('#{$type_path}topstitch-webfont.svg#webfont2bM2Nqpx') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Comic Zine is a freeware typeface by Blue Vinyl Fonts, grabbed from fontsquirrel.com */
+@font-face {
+	font-family: 'ComicZineOTRegular';
+	src: url('#{$type_path}comic_zine_ot-webfont.eot');
+	src: url('#{$type_path}comic_zine_ot-webfont.woff') format('woff'),
+	     url('#{$type_path}comic_zine_ot-webfont.ttf') format('truetype'),
+	     url('#{$type_path}comic_zine_ot-webfont.svg#webfontG86RhAdl') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Modded version of Comic Zine OT, modded by Jenna 'Bluebie' Fox, to just be the fills. */
+@font-face {
+	font-family: 'ComicZineOTColorFill';
+	src: url('comiczineotcolorfill-webfont.eot');
+	src: url('#{$type_path}comiczineotcolorfill-webfont.woff') format('woff'),
+	     url('#{$type_path}comiczineotcolorfill-webfont.ttf') format('truetype'),
+	     url('#{$type_path}comiczineotcolorfill-webfont.svg#webfonth7tyJalr') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'QuidProQuoRegular';
+    src: url('#{$type_path}quidproquo-webfont.eot?') format('eot'),
+         url('#{$type_path}quidproquo-webfont.woff') format('woff'),
+         url('#{$type_path}quidproquo-webfont.ttf') format('truetype'),
+         url('#{$type_path}quidproquo-webfont.svg#webfontg1ngsQY8') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RomantiquesRegular';
+    src: url('#{$type_path}romantiques-webfont.eot?') format('eot'),
+         url('#{$type_path}romantiques-webfont.woff') format('woff'),
+         url('#{$type_path}romantiques-webfont.ttf') format('truetype'),
+         url('#{$type_path}romantiques-webfont.svg#webfontg14V3Qga') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'VelocetteRegular';
+    src: url('#{$type_path}velocette-webfont.eot?') format('eot'),
+         url('#{$type_path}velocette-webfont.woff') format('woff'),
+         url('#{$type_path}velocette-webfont.ttf') format('truetype'),
+         url('#{$type_path}velocette-webfont.svg#webfonto3hjedra') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SFSpeakeasyRegular';
+    src: url('#{$type_path}SF_Speakeasy-webfont.eot');
+    src: url('#{$type_path}SF_Speakeasy-webfont.eot?iefix') format('eot'),
+         url('#{$type_path}SF_Speakeasy-webfont.woff') format('woff'),
+         url('#{$type_path}SF_Speakeasy-webfont.ttf') format('truetype'),
+         url('#{$type_path}SF_Speakeasy-webfont.svg#webfontQHjThoSX') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SFSpeakeasyOblique';
+    src: url('#{$type_path}SF_Speakeasy_Oblique-webfont.eot');
+    src: url('#{$type_path}SF_Speakeasy_Oblique-webfont.eot?iefix') format('eot'),
+         url('#{$type_path}SF_Speakeasy_Oblique-webfont.woff') format('woff'),
+         url('#{$type_path}SF_Speakeasy_Oblique-webfont.ttf') format('truetype'),
+         url('#{$type_path}SF_Speakeasy_Oblique-webfont.svg#webfont2XPJWgyy') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: '20dbRegular';
+    src: url('#{$type_path}20db-webfont.eot');
+    src: url('#{$type_path}20db-webfont.eot?iefix') format('eot'),
+         url('#{$type_path}20db-webfont.woff') format('woff'),
+         url('#{$type_path}20db-webfont.ttf') format('truetype'),
+         url('#{$type_path}20db-webfont.svg#webfontjIt6uT5s') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'KingthingsVersalisRegular';
+    src: url('#{$type_path}Kingthings_Versalis-webfont.eot');
+    src: url('#{$type_path}Kingthings_Versalis-webfont.eot?iefix') format('eot'),
+         url('#{$type_path}Kingthings_Versalis-webfont.woff') format('woff'),
+         url('#{$type_path}Kingthings_Versalis-webfont.ttf') format('truetype'),
+         url('#{$type_path}Kingthings_Versalis-webfont.svg#webfont5DCN7QFS') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'KingthingsGothiqueRegular';
+    src: url('#{$type_path}Kingthings_Gothique-webfont.eot');
+    src: url('#{$type_path}Kingthings_Gothique-webfont.eot?iefix') format('eot'),
+         url('#{$type_path}Kingthings_Gothique-webfont.woff') format('woff'),
+         url('#{$type_path}Kingthings_Gothique-webfont.ttf') format('truetype'),
+         url('#{$type_path}Kingthings_Gothique-webfont.svg#webfontjrDHapmf') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LeafygladeRegular';
+    src: url('#{$type_path}Leafy-Glade-webfont.eot');
+    src: url('#{$type_path}Leafy-Glade-webfont.eot?iefix') format('eot'),
+         url('#{$type_path}Leafy-Glade-webfont.woff') format('woff'),
+         url('#{$type_path}Leafy-Glade-webfont.ttf') format('truetype'),
+         url('#{$type_path}Leafy-Glade-webfont.svg#webfontwWiXOY9w') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LeafyshadeRegular';
+    src: url('#{$type_path}Leafy_Shade-webfont.eot');
+    src: url('#{$type_path}Leafy_Shade-webfont.eot?iefix') format('eot'),
+         url('#{$type_path}Leafy_Shade-webfont.woff') format('woff'),
+         url('#{$type_path}Leafy_Shade-webfont.ttf') format('truetype'),
+         url('#{$type_path}Leafy_Shade-webfont.svg#webfontFio4fLZL') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'exoticaMedium';
+    src: url('#{$type_path}Exotica-webfont.eot');
+    src: url('#{$type_path}Exotica-webfont.eot?iefix') format('eot'),
+         url('#{$type_path}Exotica-webfont.woff') format('woff'),
+         url('#{$type_path}Exotica-webfont.ttf') format('truetype'),
+         url('#{$type_path}Exotica-webfont.svg#webfontrf1oq7mo') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AmadeusRegular';
+    src: url('#{$type_path}Amadeus-webfont.eot');
+    src: url('#{$type_path}Amadeus-webfont.eot?iefix') format('eot'),
+         url('#{$type_path}Amadeus-webfont.woff') format('woff'),
+         url('#{$type_path}Amadeus-webfont.ttf') format('truetype'),
+         url('#{$type_path}Amadeus-webfont.svg#webfontaBGRTKCG') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DitedRegular';
+    src: url('#{$type_path}Dited-webfont.eot');
+    src: url('#{$type_path}Dited-webfont.eot?iefix') format('eot'),
+         url('#{$type_path}Dited-webfont.woff') format('woff'),
+         url('#{$type_path}Dited-webfont.ttf') format('truetype'),
+         url('#{$type_path}Dited-webfont.svg#webfonta8x8YvSU') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'MothproofScriptRegular';
+    src: url('#{$type_path}Mothproof_Script-webfont.eot');
+    src: url('#{$type_path}Mothproof_Script-webfont.eot?iefix') format('eot'),
+         url('#{$type_path}Mothproof_Script-webfont.woff') format('woff'),
+         url('#{$type_path}Mothproof_Script-webfont.ttf') format('truetype'),
+         url('#{$type_path}Mothproof_Script-webfont.svg#webfontgfA0eZ2f') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'KellsSDRegular';
+    src: url('#{$type_path}Kells_SD-webfont.eot');
+    src: url('#{$type_path}Kells_SD-webfont.eot?iefix') format('eot'),
+         url('#{$type_path}Kells_SD-webfont.woff') format('woff'),
+         url('#{$type_path}Kells_SD-webfont.ttf') format('truetype'),
+         url('#{$type_path}Kells_SD-webfont.svg#webfontG5QZhG2D') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TroglodyteNFRegular';
+    src: url('#{$type_path}TROGN___-webfont.eot');
+    src: url('#{$type_path}TROGN___-webfont.eot?iefix') format('eot'),
+         url('#{$type_path}TROGN___-webfont.woff') format('woff'),
+         url('#{$type_path}TROGN___-webfont.ttf') format('truetype'),
+         url('#{$type_path}TROGN___-webfont.svg#webfontS4O7FUy7') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -1,0 +1,54 @@
+.latin {
+  font-family: KingthingsVersalisRegular; 
+  //font-family: KingthingsGothiqueRegular; 
+  //font-family: AmadeusRegular; 
+  //font-family: LeafyshadeRegular; 
+  //font-family: exoticaMedium; 
+  //font-family: TroglodyteNFRegular; 
+}
+
+.round {
+  -moz-border-radius:    10px;
+  -webkit-border-radius: 10px;
+  border-radius:         10px;
+}
+
+.lefty { float: left }
+
+.center { text-align: center }
+
+.notice {
+  background-color: #F9F7ED;
+  border-top: 1px solid #983;
+  border-bottom: 1px solid #983;
+  padding: 0.5em 1em;
+}
+
+/* syntax highlighting */
+
+.keyword {
+    font-weight: bold;
+}
+.comment {
+    color: #555;
+}
+.string, .number {
+    color: #396;
+}
+.string {
+    background-color: #E9F5F5;
+}
+.regex {
+    background-color: #E9F1F5;
+    color: #435;
+}
+.ident {
+    color: #369;
+}
+.symbol {
+    color: #000;
+}
+.constant, .class, .module {
+    color: #630;
+    font-weight: bold;
+}

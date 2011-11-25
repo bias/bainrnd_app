@@ -12,6 +12,7 @@ set :user, "trevor"
 set :use_sudo, false
 ssh_options[:forward_agent] = true
 #default_run_options[:pty] = true
+
 set :deploy_to, "/var/www/#{application}"
 set :deploy_via, :remote_cache
 

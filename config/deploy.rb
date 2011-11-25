@@ -9,16 +9,15 @@ require 'bundler/capistrano'
 set :application, "bainrnd"
 set :user, "trevor"
 
+set :use_sudo, false
+ssh_options[:forward_agent] = true
+#default_run_options[:pty] = true
+set :deploy_to, "/var/www/#{application}"
+set :deploy_via, :remote_cache
+
 ##
 ## GIT 
 ##
-
-set :deploy_via, :remote_cache
-set :deploy_to, "/var/www/#{application}"
-
-set :use_sudo, false
-ssh_options[:forward_agent] = true
-
 set :scm, :git
 set :gituser, "bias"
 set :repository,  "git@github.com:#{gituser}/#{application}.git"
@@ -30,7 +29,7 @@ set :branch, "master"
 $:.unshift(File.expand_path('./lib', ENV['rvm_path'])) 
 require "rvm/capistrano"                  
 set :rvmruby, "ruby-1.9.2-head"
-set :rvm_ruby_string, "#{rvmruby}@bainrnd"
+set :rvm_ruby_string, "#{rvmruby}@#{application}"
 
 ##
 ##  Unicorn

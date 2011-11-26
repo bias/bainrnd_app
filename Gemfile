@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '>= 3.0.5'
+gem 'rails', '>= 3.1'
 
 # XXX you should force the version number to prevent confusing breaks
 gem 'sqlite3', '>= 1.3.3'
@@ -16,6 +16,7 @@ gem 'compass', '>= 0.10.6'
 gem 'faker'
 
 group :development do
+  gem "capistrano"
   gem 'rspec-rails'
   gem 'annotate'
 end

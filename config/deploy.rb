@@ -49,14 +49,11 @@ set :rails_env, :production
 ##  Cap Deploy Custom  
 ##
 namespace :deploy do
-  task :after_setup do
-    run "cd #{current_path}/.. && mkdir -p shared/socket"
-  end
-  task :after_update do
-    run "cd #{current_path}/.. && ln -s $PWD/shared/socket current/tmp/socket"
-  end
   task :start, :roles => :app, :except => { :no_release => true } do
     run "cd #{current_path} && #{try_sudo} unicorn -c #{unicorn_config} -E #{rails_env} -D"
+  end
+  task :start_dev, :roles => :app, :except => { :no_release => true } do
+    run "cd #{current_path} && #{try_sudo} unicorn -c #{unicorn_config} -D"
   end
   task :stop, :roles => :app, :except => { :no_release => true } do
     run "#{try_sudo} kill `cat #{unicorn_pid}`"
@@ -71,4 +68,18 @@ namespace :deploy do
     stop
     start
   end
+  task :schema_load, :roles => :app do
+    run "cd #{current_path}; rake db:schema:load"
+  end
+  task :populate, :roles => :app do
+    run "cd #{current_path}; rake db:populate"
+  end
+end
+
+after 'deploy:setup' do 
+  run "cd #{current_path}/.. && mkdir -p shared/socket"
+end
+
+after 'deploy:update' do 
+  run "cd #{current_path}/.. && ln -s $PWD/shared/socket current/tmp/socket"
 end

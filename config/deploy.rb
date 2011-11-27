@@ -6,7 +6,7 @@ require 'bundler/capistrano'
 ##
 ## App/server config
 ##
-set :application, "bainrnd"
+set :application, "bainrnd_app"
 set :user, "trevor"
 
 set :use_sudo, false

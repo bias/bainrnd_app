@@ -30,4 +30,5 @@ end
 
 group :production do
   gem 'pg'
+  gem 'memcache-client'
 end

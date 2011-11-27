@@ -4,7 +4,7 @@ describe PagesController do
   render_views
 
   before(:each) do
-    @base_title = "Annosum" 
+    @base_title = "Bain RnD" 
   end
 
   describe "GET 'home'" do

@@ -74,6 +74,12 @@ namespace :deploy do
   task :populate, :roles => :app do
     run "cd #{current_path}; rake db:populate"
   end
+  task :update_dev, :roles => :app do
+    stop
+    update
+    start_dev
+    schema_load 
+  end
 end
 
 after 'deploy:setup' do 

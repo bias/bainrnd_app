@@ -15,6 +15,8 @@ end
 ENV['BUNDLE_GEMFILE'] = File.expand_path('../Gemfile', File.dirname(__FILE__))
 require 'bundler/setup'
 
+rails_env = ENV['RAILS_ENV'] || 'production'
+
 worker_processes 4
 working_directory APP_ROOT
 
@@ -22,6 +24,7 @@ preload_app true
 
 timeout 30
 
+# FIXME add symlink for socket too!
 listen APP_ROOT + "/tmp/socket/unicorn.sock", :backlog => 64
 
 pid APP_ROOT + "/tmp/pids/unicorn.pid"

@@ -37,6 +37,7 @@ set :rvm_ruby_string, "#{rvmruby}@#{application}"
 ##
 set :unicorn_config, "#{current_path}/config/unicorn.rb"
 set :unicorn_pid, "#{current_path}/tmp/pids/unicorn.pid"
+set :unicorn_socket, "#{current_path}/tmp/socket/unicorn.pid"
 
 ##
 ##  Cap Deploy Config
@@ -48,6 +49,12 @@ set :rails_env, :production
 ##  Cap Deploy Custom  
 ##
 namespace :deploy do
+  task :after_setup do
+    run "cd #{current_path}/.. && mkdir -p shared/socket"
+  end
+  task :after_update do
+    run "cd #{current_path}/.. && ln -s $PWD/shared/socket current/tmp/socket"
+  end
   task :start, :roles => :app, :except => { :no_release => true } do
     run "cd #{current_path} && #{try_sudo} unicorn -c #{unicorn_config} -E #{rails_env} -D"
   end
